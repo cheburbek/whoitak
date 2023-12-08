@@ -1,0 +1,220 @@
+@keyframes fade {
+	0%   { opacity: 0; }
+	11.11%   { opacity: 1; }
+	33.33%  { opacity: 1; }
+	44.44%  { opacity: 0; }
+	100% { opacity: 0; }
+  }
+
+  .line_slider img,
+  .small_slider img, 
+  .summer_slider img { position:absolute; left:0; right:0; opacity:0; animation-name: fade; animation-duration: 9s; animation-iteration-count: infinite; }
+  
+  .line_slider img:nth-child(1), 
+  .small_slider img:nth-child(1), 
+  .summer_slider img:nth-child(1) { animation-delay: 0s;  }
+  .line_slider img:nth-child(2), 
+  .small_slider img:nth-child(2), 
+  .summer_slider img:nth-child(2) { animation-delay: 3s;  }
+  .line_slider img:nth-child(3), 
+  .small_slider img:nth-child(3), 
+  .summer_slider img:nth-child(3) { animation-delay: 6s;  }
+
+
+.line_slider,
+.small_slider,
+.summer_slider {
+	margin: 30px 5px 70px 0;
+	display: inline-block;
+	vertical-align: top;
+	position:relative;
+}
+
+.line_slider { width: 380px; height: 609px; }
+.small_slider { width: 278px; height: 397px;}
+.summer_slider { height: 693px; width: 479px; }
+
+.picture {
+	margin: 30px 5px 30px 0;
+	display: inline-block;
+}
+
+.picture img {
+	height: 609px; 
+	width: 380px;
+}
+
+.season {
+	white-space:nowrap;
+}
+
+
+.line_slider img { height: 609px; width: 380px;}
+.small_slider img { width:278px; height:397px;}
+.summer_slider img { height: 693px; width: 479px;}
+
+
+.side_text {
+	width: 450px;
+	display: inline-block;
+	margin: 50px 5px 15px 40px;
+	white-space: normal;
+	font-size: 19px;
+    letter-spacing: -0.1px;
+    font-family: "Tautz";
+}
+
+.text {
+	width: 729px;
+	margin: 0 auto;
+	white-space: normal;
+	font-size: 19px;
+    letter-spacing: -0.1px;
+    font-family: "Tautz";
+}
+
+.container h2 {
+	font-family: "Tautz Bold";
+	font-size: 20px;
+    letter-spacing: -0.3px;
+	color: #4a4a4a;
+	text-align: center;
+	margin: 0 0 50px 0;
+}
+
+@font-face {
+	font-family: "Tautz";
+	src: url("font.ttf");
+}
+
+@font-face {
+	font-family: "Tautz Bold";
+	src: url("font2.ttf");
+}
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+    color: #4a4a4a;
+}
+
+
+.navbar-brand {
+	font-weight: 700;
+}
+
+.navbar-default .navbar-brand {
+	color: #fff;
+}
+
+.navbar-default {
+	background-color: transparent;
+	background-color: rgba(0, 0, 0, 0.529);
+	border-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #fff;
+	background-color: transparent;
+	border-top: 5px solid #fff;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #fff;
+}
+
+
+
+#headerwrap {
+	background: url("sunset-3087145.jpg") no-repeat center top fixed;
+	margin-top: 0px;
+	padding-top: 250px;
+	text-align:Left;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 750px;
+	width: 100%;
+	font-family: "Tautz Bold";
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#why {
+	background: #444 url("bucket2.jpg") no-repeat center top fixed;
+	margin-top: 40px;
+	padding-top: 0px;
+	text-align:Left;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 450px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#w{
+	background:rgba(50, 50, 50, 0.5);
+	margin-top: 0px;
+	padding-top: 0px;
+	color: white;
+	}
+
+
+#headerwrap h1 {
+	color:#ffffff;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+#headerwrap h4 {
+	font-weight: 400;
+	color: #ffffff
+}
+
+#footerwrap {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #2f2f2f;
+	text-align: center;
+}
+
+#footerwrap p {
+	color: #7d7d7d;
+	margin-left: 10px;
+	font-family: futura,sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+}
